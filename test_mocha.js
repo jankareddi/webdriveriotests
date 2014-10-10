@@ -5,7 +5,7 @@ var webdriverio = require('webdriverio'),
     
 var options = { desiredCapabilities: { browserName: 'chrome' } };
 
-describe('test suite to ensure the set up is working', function() {
+describe('test suite to test learning library', function() {
     this.timeout(99999999);
     var client = {};
 
@@ -24,17 +24,7 @@ describe('test suite to ensure the set up is working', function() {
         });
     });
 
-    // it('should browse to google.com', function(done) {
-    //     client.url('http://www.google.com')
-    //     .getTitle(function(err, title) {
-    //         //assert.equal(title, 'Google');
-    //         //expect(title).to.equal('Google');
-    //         title.should.equal('Google');
-    //     })
-    //     .call(done);
-    // });
-
-    describe('suite to test learning library', function() {
+    describe('tests for core learning library scenarios', function() {
         it('should browse to LLA reader', function(done) {
             client.loginWithTheseCredentials('shailesh.pardesi@aptaracorp.com', 'ciscopwd', function() {})
             .selectorExecute('//ul[@id="booksList"]/li', function(data) {
