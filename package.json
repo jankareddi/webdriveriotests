@@ -1,0 +1,14 @@
+{
+  "name": "webdriveriotests",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "test_mocha.js"
+  },
+  "dependencies": {
+    "chai": "~1.9.2",
+    "webdriverio": "~2.2.3"
+  },
+  "devDependencies": {
+  }
+}
