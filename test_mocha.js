@@ -1,7 +1,8 @@
 var webdriverio = require('webdriverio'),
     chai        = require('chai'),
     expect      = chai.expect,
-    should      = chai.should();
+    should      = chai.should()
+    config      = require('./config');
     
 var options = { desiredCapabilities: { browserName: 'chrome' } };
 
@@ -14,7 +15,7 @@ describe('test suite to test learning library', function() {
         client.init(done);
 
         client.addCommand('loginWithTheseCredentials', function(userId, password, cb) {
-            this.url('http://54.90.88.79/mitchell1')
+            this.url(config.url)
             .setValue('#userNameTxt', userId)
             .setValue('#passwordTxt', password)
             .click('#btnLogin')
@@ -26,7 +27,7 @@ describe('test suite to test learning library', function() {
 
     describe('tests for core learning library scenarios', function() {
         it('should browse to LLA reader', function(done) {
-            client.loginWithTheseCredentials('shailesh.pardesi@aptaracorp.com', 'ciscopwd', function() {})
+            client.loginWithTheseCredentials(config.userId, config.password, function() {})
             .selectorExecute('//ul[@id="booksList"]/li', function(data) {
                 return data;
             }, function(err, booksList) {
