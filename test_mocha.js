@@ -30,7 +30,7 @@ describe('test suite to test learning library', function() {
             .selectorExecute('//ul[@id="booksList"]/li', function(data) {
                 return data;
             }, function(err, booksList) {
-                booksList.should.have.lengthOf(3);
+                booksList.should.have.lengthOf(1);
             })
             .call(done);
         });
