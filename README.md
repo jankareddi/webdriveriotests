@@ -17,7 +17,8 @@ Make sure you have the following installed:
 4. It will help to install [node-inspector](https://github.com/node-inspector/node-inspector) for debugging your tests
 5. Clone this repository
 6. Run **npm install** from node.js command shell
-7. Run **mocha test_mocha.js** and watch the results
+7. Update url, userId, password in config file
+8. Run **mocha test_mocha.js** and watch the results
 
 ## Debugging tips
 Try these steps. They worked for me:
