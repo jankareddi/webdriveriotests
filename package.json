@@ -5,10 +5,10 @@
   "scripts": {
     "start": "test_mocha.js"
   },
-  "dependencies": {
-    "chai": "~1.9.2",
-    "webdriverio": "~2.2.3"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "chai": "~1.9.2",
+    "grunt-webdriver": "^0.4.4",
+    "webdriverio": "~2.2.3"
   }
 }
