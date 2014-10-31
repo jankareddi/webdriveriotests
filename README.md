@@ -19,7 +19,7 @@ Make sure you have the following installed:
 6. Run **npm install** from node.js command shell
 7. Update url, userId, password in config file
 8. Run **mocha test_mocha.js** and watch the results
-9. ** Better alternative ** - Added a  grunt script. So all tests can be run by either grunt or grunt test. In addition, a file with tests targeting a specific area can be executed by grunt testArea:<fileName without the js extension>.
+9. **Better alternative** - Added a  grunt script. So all tests can be run by either grunt or grunt test. In addition, a file with tests targeting a specific area can be executed by grunt testArea:_fileName without the js extension_.
 
 ## Debugging tips
 Try these steps. They worked for me:
