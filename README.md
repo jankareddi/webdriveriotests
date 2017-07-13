@@ -3,7 +3,7 @@
 A simple example to help set up and run automation tests on Windows platform using:
 
  1. [webdriverio](http://webdriver.io/)
- 2.  [mocha](http://visionmedia.github.io/mocha/)
+ 2.  [mocha](http://mochajs.org/)
  3.  [chai](http://chaijs.com/)
 
 webdriverio is a wrapper for Selenium web driver.
